@@ -1,0 +1,46 @@
+<%- include('../public/partials/header.ejs') %>
+
+  <body class="background-radial-gradient">
+    <section class="text-center">
+      <div
+        id="radius-shape-1"
+        class="position-absolute rounded-circle shadow-5-strong"
+      ></div>
+      <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+      <div class="card mx-9 lg-12 mx-md-5 shadow-5-strong" id="card">
+        <div class="card-body px-md-5 align-left">
+          <h2 class="fw-bold mb-5">Registration Form</h2>
+
+
+          
+          <form method="post" action="/register" style="text-align: left">
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example1">Name</label>
+              <input type="text" id="form3Example1" name="name" class="form-control" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example3"
+                >Email address</label
+              >
+              <input type="email" id="form3Example3"  name="email" class="form-control" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example4">Password</label>
+              <input type="password" id="form3Example4"  name="password" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block mb-4">
+              Register</button>
+            <button class="btn btn-primary btn-block mb-4"><a href="/login" style="color: aliceblue; text-decoration: none;">Login </a></button>
+              </form>
+
+           
+
+
+        </div>
+      </div>
+    </section>
+
+<%- include('../public/partials/footer.ejs') %>

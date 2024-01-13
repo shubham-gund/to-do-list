@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-radial-gradient {
+    background-color: hsl(219, 43%, 17%);
+    background-image: radial-gradient(
+        650px circle at 0% 0%,
+        hsl(218, 41%, 35%) 15%,
+        hsl(218, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%
+      ),
+      radial-gradient(
+        1250px circle at 100% 100%,
+        hsl(218, 41%, 45%) 15%,
+        hsl(218, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%
+      );
+  }
+
+  #radius-shape-1 {
+    height: 220px;
+    width: 220px;
+    top: 110px;
+    left: 130px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+  }
+
+  #radius-shape-2 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    bottom: 30px;
+    right: 180px;
+    width: 200px;
+    height: 300px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+  }
+
+  #card {
+    width: 40rem; /* Adjust the width based on your design preference */
+     /* Set a maximum width for better responsiveness */
+    margin: 40px auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Use rgba for a semi-transparent background */
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.btn{
+    margin-left:20% ;
+    margin-right:10% ;
+}
+/* Optional: Add media queries for responsiveness */
+@media (max-width: 800px) {
+    #card {
+        width: 20rem;
+        height: 26rem;
+        font-size: 0.6rem;
+    }
+    .btn{
+        margin-left:7% ;
+        margin-right:6% ;
+    }
+}
+
+  .form-outline > input{
+    background-color: #ececec77;
+  }
