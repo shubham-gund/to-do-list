@@ -40,6 +40,13 @@ app.post('/register', async (req, res) => {
     const name = req.body.name;
     const email = req.body.email;
     const password = req.body.password;
+
+    if (!name || !email || !password) {
+      console.log("Please fill out all fields");
+      res.redirect('/rerror');
+      return; 
+    }
+
     const existingUser = await db.query("select email from users where email=$1", [email]);
     if (existingUser.rows.length === 0) {
       await db.query("insert into users values($1,$2,$3)", [email, name, password]);
@@ -159,7 +166,7 @@ app.get('/logout', (req, res) => {
     if (err) {
       console.log(err);
     } else {
-      res.redirect('/login');
+      res.redirect('/');
     }
   });
 });
